@@ -18,13 +18,14 @@ When you click the **Knit** button a document will be generated that includes bo
 ```{r cars}
 summary(cars)
 ```
-
+d <- rnorm(10)
+d
 ## Including Plots
 
 You can also embed plots, for example:
 
-```{r pressure}
-plot(c(rnorm(10,1,100)), c(rnorm(10,1,100)))
-
+```{r pressure, echo=FALSE}
+plot(pressure)
 ```
+plot(c(rnorm(10,1,100)), c(rnorm(10,1,100)))
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
